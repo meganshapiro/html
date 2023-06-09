@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<h1 style="border:2px solid Tomato;"> Welcome to the NYR Form </h1>
+
+
+<img src="rangers.png" alt="NYR" style="width:300px;height: 300px;">
+
+
+<script>
+    function light(){ document.body.style.background = "rgb(144, 192, 255)"; }
+    function dark(){ document.body.style.background = "rgb(255, 116, 116)"; }
+</script>
+
+<button onclick="light()" style="padding:10px;background:rgb(144, 192, 255)">blue mode</button>
+<button onclick="dark()" style="padding:10px;background:rgb(255, 116, 116);color:white;">red mode</button>
+
+<h3 style="border:2px solid rgb(37, 98, 252);">Who's your favorite player currently on the team?</h3>
+
+<form action="/save" method = "POST">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=" "><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=" "><br><br>
+    
+  <img src="roster.jpg" alt="roster" style="width:500px;height: 300px;">
+
+<h3 style="border:2px solid rgb(0, 0, 0);"> Who do you think was this season's MVP?</h3>
+
+<label class="choose" for="forwards">Forwards:</label>
+<select name = "forwards" id = "forwards">
+    <option value="Chytil">Filip Chytil</option>
+    <option value="Goodrow">Barclay Goodrow</option>
+    <option value="Kaako">Kaapo Kaako</option>
+    <option value="Kane">Patrick Kane</option>
+    <option value="Kreider">Chris Kreider</option>
+    <option value="Lafreniere">Alexis Lafreniere</option>
+    <option value="Motte">Tyler Motte</option>
+    <option value="Panarin">Artemi Panarin</option>
+    <option value="Tarasenko">Vladimir Tarasenko</option>
+    <option value="Trochek">Vincent Trochek</option>
+    <option value="Vesey">Jimmy Vesey</option>
+    <option value="Zibanejad">Mika Zibanejad</option>
+</select>
+
+<label class="choose" for="defensemen">Defensemen:</label>
+<select name = "defensemen" id = "defensemen">
+    <option value="Miller">K'Andre Miller</option>
+    <option value="Trouba">Jacob Trouba</option>
+    <option value="Schneider">Braden Schneider</option>
+    <option value="Fox">Adam Fox</option>
+    <option value="Harpur">Ben Harpur</option>
+    <option value="Lingren">Ryan Lingren</option>
+    <option value="Mikkola">Niko Mikkola</option>   
+</select>
+
+<label class="choose" for="goalie">Goalies:</label>
+<select name = "goalie" id = "goalie">
+    <option value="Halak">Jaroslav Halak</option>
+    <option value="Shesterkin">Igor Shesterkin</option>
+</select>
+    
+<input type="submit" value="Submit">
+</form>
+
+<p><a href="mailto: mshapiro24@gcds.net, " target="_blank"> Questions? Send an email! </a></p>
+
+</body>
+</html>
+
